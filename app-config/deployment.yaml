@@ -18,7 +18,7 @@ spec:
         app: argo-app
     spec:
       containers:
-      - image: iamabhi67/static-app:v1
+      - image: iamabhi67/static-app:v2
         name: static-app
         resources: {}
 status: {}
