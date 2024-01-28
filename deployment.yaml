@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: argo-app
+  name: argo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argo-app
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: argo-app
+    spec:
+      containers:
+      - image: iamabhi67/static-app:v1
+        name: static-app
+        resources: {}
+status: {}
