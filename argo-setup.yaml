@@ -11,7 +11,7 @@ spec:
     path: app-config
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: my-argo-app
 
   syncPolicy:
     syncOptions:
